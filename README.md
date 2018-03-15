@@ -7,10 +7,9 @@
       3.准备密钥
       4.进行指纹认证、
       5.释放
-
       在安全性要求不高的情况下，可以在几行代码之内快速使用TENCENT SOTER完成指纹授权逻辑编写。
       在使用之前，请确保所使用的测试机在支持机型列表中。
-      添加gradle依赖
+      ##添加gradle依赖
       在项目的build.gradle中，添加TENCENT SOTER依赖
       dependencies {
           ...
