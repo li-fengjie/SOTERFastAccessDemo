@@ -11,17 +11,15 @@
         在使用之前，请确保所使用的测试机在支持机型列表中。
 
         1.添加gradle依赖
-        -
         
         在项目的build.gradle中，添加TENCENT SOTER依赖
-        dependencies {
-            ...
-            compile 'com.tencent.soter:soter-wrapper:1.3.10'
-            ...
-        }
+          dependencies {
+              ...
+              compile 'com.tencent.soter:soter-wrapper:1.3.10'
+              ...
+          }
 
         2.声明权限
-        -
         
         在 AndroidManifest.xml中添加使用指纹权限
         <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
@@ -35,12 +33,12 @@
         param);
 
         3.准备密钥
-        -
+        
         需要在使用指纹认证之前生成相关密钥
         SoterWrapperApi.prepareAuthKey(new SoterProcessCallback<SoterProcessKeyPreparationResult>() {...},false, true, 0, null, null);
 
         4.进行指纹认证
-        -
+        
         密钥生成完毕之后，可以使用封装接口调用指纹传感器进行认证。
         AuthenticationParam param = new AuthenticationParam.AuthenticationParamBuilder()
                                             .setScene(0)
@@ -51,7 +49,7 @@
         SoterWrapperApi.requestAuthorizeAndSign(new SoterProcessCallback<SoterProcessAuthenticationResult>() {...}, param);
 
         5.释放
-        -
+
         当你不再使用TENCENT SOTER时，可以选择释放所有资源，用于停止所有生成、上传任务以及支持状态等。释放之后再次使用时，需要重新进行初始化。 实际上，TENCENT SOTER本身不会占据过多资源，只需要在确认不会再次使用的前提下（如切换账户之前）释放一次即可。
         SoterWrapperApi.release();
 
