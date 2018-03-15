@@ -18,6 +18,7 @@
       ...
   }
   声明权限
+  _
   在 AndroidManifest.xml中添加使用指纹权限
   <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
   初始化
