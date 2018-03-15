@@ -12,6 +12,7 @@
 
         1.添加gradle依赖
         -
+        
         在项目的build.gradle中，添加TENCENT SOTER依赖
         dependencies {
             ...
@@ -21,6 +22,7 @@
 
         2.声明权限
         -
+        
         在 AndroidManifest.xml中添加使用指纹权限
         <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
         初始化
