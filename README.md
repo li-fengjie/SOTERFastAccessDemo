@@ -1,6 +1,6 @@
-# STOERFastAccessDemo
+# SOTERFastAccessDemo
 
-安卓指纹STOER(可取到指纹fid索引信息)开发 快速接入演示
+安卓指纹SOTER(可取到指纹fid索引信息)开发 快速接入演示
 =
 1.添加gradle依赖
 -
